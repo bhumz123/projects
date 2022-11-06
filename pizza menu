@@ -1,0 +1,61 @@
+#PIZZA MENU
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+cheese=1
+pizza=0
+pepperoni=0
+bill=0
+if size=="S":
+  pizza+=15
+  if add_pepperoni=="Y":
+    pepperoni+=2
+    if extra_cheese=="Y":
+      bill=pizza+pepperoni+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza+pepperoni
+      print("Your final bill is $",bill)
+  else:
+    if extra_cheese=="Y":
+      bill=pizza+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza
+      print("Your final bill is $",bill)
+elif size=="M":
+  pizza+=20
+  if add_pepperoni=="Y":
+    pepperoni+=3
+    if extra_cheese=="Y":
+      bill=pizza+pepperoni+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza+pepperoni
+      print(bill)
+  else:
+    if extra_cheese=="Y":
+      bill=pizza+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza
+      print("Your final bill is $",bill)
+else:
+  pizza+=25
+  if add_pepperoni=="Y":
+    pepperoni+=2
+    if extra_cheese=="Y":
+      bill=pizza+pepperoni+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza+pepperoni
+      print("Your final bill is $",bill)
+  else:
+    if extra_cheese=="Y":
+      bill=pizza+cheese
+      print("Your final bill is $",bill)
+    else:
+      bill=pizza
+      print("Your final bill is $",bill)
+
