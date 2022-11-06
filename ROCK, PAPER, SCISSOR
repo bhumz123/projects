@@ -1,0 +1,38 @@
+# STONE PAPER SCISSOR GAME
+
+import random
+
+print("What do you choose? Type 0 for Rock , 1 for Paper and 2 for Scissors.")
+urchoice=int(input("input your choice "))
+computer=random.randint(0,2)
+print("computer choose ", computer)
+if (urchoice==1):
+    if (urchoice>computer) :
+        print("you win")
+        
+    elif (urchoice<computer) :
+        print("computer wins")
+     
+    else:
+        print("draw")
+exit()
+if (urchoice==0):
+    if (urchoice+1)==computer:
+        print("computer wins")
+        
+    elif (urchoice+2)==computer:
+        print("you win")
+        
+    else:
+        print("draw")
+exit()
+if(urchoice==2):
+    
+    if (urchoice-2)==computer:
+        print("computer wins")
+        
+    elif (urchoice-1)==computer:
+        print("you win")
+        
+    else:
+        print("draw")
